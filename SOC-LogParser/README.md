@@ -74,7 +74,7 @@ Click on this and then in a browser you will see a report for logs
 - **Improved:** Professional **Dark Mode** UI for the HTML Security Report, optimized for SOC environments.
 - **Fixed:** Robust exception handling for OS-level permission errors when accessing protected log directories.
 
-### [v1.1.0] - 2026-02-15
+### [v1.1.0] - 2026-03-07
 **Created fundamentals to improve future versions**
 - **Feature:** Migrated core processing to **Pandas**, enabling high-speed analysis of large-scale datasets.
 - **Feature:** Introduced **DoS/HTTP Flood detection** based on configurable request-per-IP thresholds.
