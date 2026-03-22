@@ -56,13 +56,13 @@ For execution you can paste this python script to a .py file in your Operational
 ## Script execution results and main conclusions
 If everything goes well and you manage to run the script, you should see a file like this on your desktop:
 
-![](link_3)
+![](https://github.com/cbrkrtek/Threat-Ops-Automation/blob/main/SOC-LogParser/Pictures%20for%20README.md/v111_desktop.PNG)
 
 Click on this and then in a browser you will see a report for logs
 
 
-![](link_1)
-![](link2)
+![](https://github.com/cbrkrtek/Threat-Ops-Automation/blob/main/SOC-LogParser/Pictures%20for%20README.md/v111_screen_1.PNG)
+![](https://github.com/cbrkrtek/Threat-Ops-Automation/blob/main/SOC-LogParser/Pictures%20for%20README.md/v111_screen_2.PNG)
 ---
 
 ## 🔄 Project Updates & Changelog
@@ -84,6 +84,10 @@ Click on this and then in a browser you will see a report for logs
 - **Statistics:** Added basic console telemetry (Total requests, Unique IPs, and HTTP Status Code distribution).
 - **Core:** Developed the primary log parsing engine using **Regular Expressions (Regex)** for Nginx/Apache combined log formats.
 ## 🚀 Future Roadmap
-- [ ] **Cloud Integration:** Add support for AWS CloudTrail and Azure Activity Logs.
-- [ ] **Containerization:** Create a Dockerfile for easy deployment as a sidecar container.
-- [ ] **Notification:** Integration with Slack/Telegram Webhooks for instant alerting.
+
+- [ ] **False Positive Reduction (Tuning):** - Implement context-aware analysis (e.g., ignore `SELECT` keywords if the HTTP response is `403 Forbidden`).
+    - Add a "Whitelist" for trusted internal IP addresses and administrative URLs.
+- [ ] **Advanced Regex Optimization:** - Refactor the parsing engine to handle non-standard log formats and corrupted log lines.
+- [ ] **SIEM Integration:** - Add a connector for **Wazuh/Elasticsearch API** to fetch logs directly from the security pond.
+- [ ] **Cloud-Native Logging:** - Support for **AWS CloudTrail** (JSON) and **Azure Activity Logs**.
+- [ ] **Containerization:** - Provide a `Dockerfile` for easy deployment as a sidecar container in Kubernetes.
