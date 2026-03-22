@@ -1,4 +1,3 @@
-
 # 🛡️SOC-LogParser: Advanced HTTP Threat Detection & Log Analysis | by cbrkrtek
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -47,16 +46,44 @@ The engine is pre-configured to detect the following common attack vectors:
 Ensure you have Python installed and the Pandas library available:
 ```bash
 pip install pandas
+pip install pandas requests
 ```
+Then sign up at ![](https://www.virustotal.com/) and copy your API Key from the API Key section in your profile.
+Paste it in a variable **VT_API_KEY**.
+
 ### 2. Execution
 For execution you can paste this python script to a .py file in your Operational System and change variable **LOG_PATH**. In this variable you need to paste a path to a file access.log.txt or basic access.log.
 ## Script execution results and main conclusions
 If everything goes well and you manage to run the script, you should see a file like this on your desktop:
 
-![](https://github.com/cbrKrtek/Threat-Ops-Automation/blob/main/SOC-LogParser/Pictures%20for%20README.md/screenshot_desktop.PNG)
+![](link_3)
 
 Click on this and then in a browser you will see a report for logs
 
-![](https://github.com/cbrKrtek/Threat-Ops-Automation/blob/main/SOC-LogParser/Pictures%20for%20README.md/report1.PNG)
 
-![](https://github.com/cbrKrtek/Threat-Ops-Automation/blob/main/SOC-LogParser/Pictures%20for%20README.md/report2.PNG)
+![](link_1)
+![](link2)
+---
+
+## 🔄 Project Updates & Changelog
+
+### [v1.1.1] - 2026-03-22 (Current)
+**Intelligence Enrichment & Stability**
+- **Added:** Integration with **VirusTotal API v3** to provide real-time reputation scoring for suspicious IP addresses.
+- **Added:** Automated **Threat Intelligence enrichment** (mapping local detections to global threat databases).
+- **Improved:** Professional **Dark Mode** UI for the HTML Security Report, optimized for SOC environments.
+- **Fixed:** Robust exception handling for OS-level permission errors when accessing protected log directories.
+
+### [v1.1.0] - 2026-02-15
+**Created fundamentals to improve future versions**
+- **Feature:** Migrated core processing to **Pandas**, enabling high-speed analysis of large-scale datasets.
+- **Feature:** Introduced **DoS/HTTP Flood detection** based on configurable request-per-IP thresholds.
+- **Detection:** Implemented initial signature-based detection for **SQL Injection** and **Cross-Site Scripting (XSS)** and **Path Traversal**.
+- **Added:** Expanded signature library to detect **RCE** (Remote Code Execution) and attempts to access **Sensitive Files** (.env, .git, config).
+- **Reporting:** Created the first version of the **HTML Report** generator using Bootstrap tables.
+- **Statistics:** Added basic console telemetry (Total requests, Unique IPs, and HTTP Status Code distribution).
+- **Core:** Developed the primary log parsing engine using **Regular Expressions (Regex)** for Nginx/Apache combined log formats.
+## 🚀 Future Roadmap
+- [ ] **Cloud Integration:** Add support for AWS CloudTrail and Azure Activity Logs.
+- [ ] **Containerization:** Create a Dockerfile for easy deployment as a sidecar container.
+- [ ] **Notification:** Integration with Slack/Telegram Webhooks for instant alerting.
