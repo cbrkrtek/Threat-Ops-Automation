@@ -96,7 +96,15 @@ The analyzer relies on local and cloud intelligence for accurate detection.
 
 **For VirusTotal** you need to sign up your free account in this platform, then paste **API KEY** in code.
 ### 5*. Some tips on how it should look:
+![](https://github.com/cbrkrtek/Threat-Ops-Automation/blob/main/SOC-LogParser/Pictures%20for%20README.md/SOC-LogParser-screenshot-1.PNG)
 
+**Screenshot 1: "Execution SOC-LogParser script"**
+
+![](https://github.com/cbrkrtek/Threat-Ops-Automation/blob/main/SOC-LogParser/Pictures%20for%20README.md/SOC-LogParser-screenshot-2.PNG)
+
+**Screenshot 2: "Result of SOC-LogParser script"**
+In a screenshot i don't have a country, because i didn't create GeoLite2-City.mmdb. 
+P.S. *access.log.txt* you can see in my directory *SOC-LogParser*. 
 ## 🔄 Project Updates & Changelog
 ## 🚀 [v1.3.0] - 2026-03-28 (Current)
 ### Added
