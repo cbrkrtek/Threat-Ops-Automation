@@ -4,7 +4,7 @@
 [![Security Focus](https://img.shields.io/badge/Focus-CyberSecurity-red.svg)](#)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](#)
 
-**Log analyzer** is a high-performance Python-based analytical tool leveraging the **Pandas** library to automate the audit of web server logs (Nginx/Apache). It identifies exploitation attempts, performs behavioral analysis, and generates executive-level security incident reports. It was my first python script for automatization and analysis logs.
+**Log analyzer** is a high-performance Python-based analytical tool leveraging the **Pandas** library to automate the audit of web server logs (Nginx/Apache). It identifies exploitation attempts, performs behavioral analysis, and generates executive-level security incident reports.
 
 ---
 
